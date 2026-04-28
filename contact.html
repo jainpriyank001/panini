@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - PaniniX Labs</title>
+<meta name="description" content="Book a free 20-minute demo with PaniniX Labs. Reach us for student programs, teacher training, AI lab setup, or the AI Student Kit.">
+<meta property="og:title" content="Contact - PaniniX Labs">
+<meta property="og:description" content="Real AI. Real hardware. Real outcomes.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- GA4: replace G-XXXXXXXX with your Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXX');
+</script>
+</head>
+<body>
+
+<!-- ===== Nav ===== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="PaniniX Labs home">
+      <span class="logo-mark">PaniniX Labs</span>
+      <span class="logo-tag">Edge AI Education</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="index.html#projects">Project</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-drawer" id="mobile-drawer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="index.html#projects">Project</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Page header ===== -->
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow" style="color:rgba(255,255,255,0.85);">Contact</p>
+      <h1>Let Us Bring the Lab to You.</h1>
+      <p>Tell us a little about your institution and what you would like to explore. We will reach out within 24 hours to schedule a free 20-minute demonstration - on-site, on a video call, or at our Lucknow lab. Whichever works for you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- ===== Left: Contact details ===== -->
+        <div class="contact-info reveal">
+          <h2>Reach us directly</h2>
+
+          <h3 style="margin-top:24px;">PaniniX Labs</h3>
+          <p class="address">Edge AI Education Institute</p>
+          <p class="address">Lucknow, Uttar Pradesh, India</p>
+
+          <h3 style="margin-top:24px;">Email</h3>
+          <p><a href="mailto:paninixlabs@gmail.com">paninixlabs@gmail.com</a></p>
+
+          <h3 style="margin-top:24px;">Phone</h3>
+          <p><a href="tel:+919485171710">+91 94851 71710</a></p>
+
+          <h3 style="margin-top:24px;">WhatsApp</h3>
+          <p><a href="https://wa.me/919485171710?text=Hello%2C%20I%20am%20interested%20in%20PaniniX%20Labs%20programs.%20Can%20we%20schedule%20a%20demo%3F" target="_blank" rel="noopener">+91 94851 71710</a></p>
+
+          <span class="badge">🇮🇳 Startup India Registered</span>
+
+          <h3 style="margin-top:8px;">What can we help you with?</h3>
+          <div class="interest-cards">
+            <div class="interest-card">
+              <strong>Option A - Student Program</strong>
+              <span>For schools and colleges enrolling students into a structured, project-based AI program.</span>
+            </div>
+            <div class="interest-card">
+              <strong>Option B - Teacher Training</strong>
+              <span>For institutions that want their CS / STEM teachers to confidently teach AI from next term.</span>
+            </div>
+            <div class="interest-card">
+              <strong>Option C - AI Lab Setup</strong>
+              <span>For institutions ready to install a complete, turn-key AI lab on campus.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Right: Form ===== -->
+        <div>
+          <div class="form-card reveal">
+            <h2 style="margin-top:0;">Request a Free Demo</h2>
+            <p style="color:var(--grey-500); font-size:15px;">All starred fields are required. We will reach out within 24 hours.</p>
+
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <strong>Thank you.</strong><br>
+              We will reach out within 24 hours to schedule your free 20-minute demonstration.
+            </div>
+
+            <form id="enquiry-form" action="https://formspree.io/f/mgorgeoj" method="POST" novalidate>
+              <div class="form-row">
+                <label for="name">Full Name <span class="req">*</span></label>
+                <input type="text" id="name" name="name" required>
+                <p class="err">Please enter your full name.</p>
+              </div>
+
+              <div class="form-row">
+                <label for="institution">Institution Name <span class="req">*</span></label>
+                <input type="text" id="institution" name="institution" required>
+                <p class="err">Please enter your institution name.</p>
+              </div>
+
+              <div class="form-row">
+                <label for="role">Role <span class="req">*</span></label>
+                <select id="role" name="role" required>
+                  <option value="">Select your role…</option>
+                  <option>Principal</option>
+                  <option>HOD</option>
+                  <option>Teacher</option>
+                  <option>Other</option>
+                </select>
+                <p class="err">Please select your role.</p>
+              </div>
+
+              <div class="form-row">
+                <label for="city">City <span class="req">*</span></label>
+                <input type="text" id="city" name="city" required>
+                <p class="err">Please enter your city.</p>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <p class="err">Please enter a valid email address.</p>
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" required inputmode="numeric" autocomplete="tel">
+                <p class="err">Please enter a valid phone number (at least 10 digits).</p>
+              </div>
+
+              <div class="form-row">
+                <label for="interest">What are you interested in? <span class="req">*</span></label>
+                <select id="interest" name="interest" required>
+                  <option value="">Select an option…</option>
+                  <option>Student Program</option>
+                  <option>Teacher Training</option>
+                  <option>AI Lab Setup</option>
+                  <option>AI Kit</option>
+                  <option>General Enquiry</option>
+                </select>
+                <p class="err">Please select what interests you.</p>
+              </div>
+
+              <div class="form-row">
+                <label for="message">Message (optional)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Request a Free Demo</button>
+              <p class="form-note">We respond within 24 hours. We will reach out to schedule your free 20-minute demonstration.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>PaniniX Labs</h4>
+      <p>Edge AI Education Institute</p>
+      <p>Lucknow, Uttar Pradesh</p>
+      <p><a href="mailto:paninixlabs@gmail.com">paninixlabs@gmail.com</a></p>
+      <div class="footer-badges">
+        <span class="pill">NVIDIA Partner Program</span>
+        <span class="pill">🇮🇳 Startup India Registered</span>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="index.html#projects">Project</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="programs.html#student">Student AI Program</a></li>
+        <li><a href="programs.html#teacher">Teacher Training</a></li>
+        <li><a href="programs.html#lab">AI Lab Setup</a></li>
+        <li><a href="programs.html#kit">AI Student Kit</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span data-year>2026</span> PaniniX Labs. All rights reserved. · Lucknow, India
+  </div>
+</footer>
+
+<!-- ===== WhatsApp floating ===== -->
+<a class="wa-float" href="https://wa.me/919485171710?text=Hello%2C%20I%20am%20interested%20in%20PaniniX%20Labs%20programs.%20Can%20we%20schedule%20a%20demo%3F" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.21c-.27-.13-1.59-.79-1.84-.88-.25-.09-.43-.13-.61.13-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.13-1.13-.42-2.16-1.34-.8-.71-1.34-1.59-1.49-1.86-.16-.27-.02-.41.12-.54.12-.12.27-.32.4-.48.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.48-.07-.13-.6-1.45-.83-1.99-.22-.52-.44-.45-.6-.46l-.51-.01c-.18 0-.47.07-.71.34-.25.27-.93.91-.93 2.22 0 1.31.96 2.58 1.09 2.76.13.18 1.88 2.87 4.55 4.02.64.27 1.13.43 1.52.55.64.2 1.22.18 1.68.11.51-.08 1.59-.65 1.81-1.27.22-.62.22-1.16.16-1.27-.07-.11-.25-.18-.52-.31zM16 4C9.37 4 4 9.37 4 16c0 2.11.55 4.13 1.6 5.93L4 28l6.27-1.55A11.93 11.93 0 0016 28c6.63 0 12-5.37 12-12S22.63 4 16 4zm0 21.85c-1.86 0-3.65-.49-5.22-1.42l-.37-.22-3.72.92.99-3.62-.24-.37A9.83 9.83 0 016.15 16C6.15 10.57 10.57 6.15 16 6.15S25.85 10.57 25.85 16 21.43 25.85 16 25.85z"/></svg>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
