@@ -224,8 +224,13 @@ section { padding: 64px 0; }
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  z-index: 99;
 }
-.nav-drawer.open { max-height: 400px; box-shadow: 0 8px 24px rgba(15,31,75,0.10); }
+.nav-drawer.open {
+  max-height: calc(100vh - var(--nav-h));
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(15,31,75,0.10);
+}
 .nav-drawer ul {
   list-style: none;
   margin: 0; padding: 16px 20px;
